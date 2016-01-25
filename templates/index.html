@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block meta_title %}{% trans "Home" %}{% endblock %}
-{% block title %}{% trans "Home" %}{% endblock %}
+{% block meta_title %}{% trans "Portfolio" %}{% endblock %}
+{% block title %}{% trans "Portfolio" %}{% endblock %}
 
 {% block breadcrumb_menu %}
-<li class="active">{% trans "Home" %}</li>
+<li class="active">{% trans "Portfolio" %}</li>
 {% endblock %}
 
 {% block main %}
 {% blocktrans %}
-<h2>Congratulations!</h2>
+<!-- <h2>Congratulations!</h2>
 <p>
     Welcome to your new Mezzanine powered website.
     Here are some quick links to get you started:
@@ -23,6 +23,63 @@
     <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
     <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
     <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
-</ul>
+</ul> -->
+
+
+
+<section id="portfolio" class="content-section text-center">
+    <div class="container">
+      
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                    <img style="height:250px"  src="static/img/dash.png" class="img-responsive" alt="">
+                                    <div style="padding-top:15px">
+                    <h4><a href="http://maxrozen.com/CrossFilterCalcs/" target="_blank" >D3/DC.JS/Crossfilter Dashboard</a></h4>
+                    
+                </div>
+            </div>
+             <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                    <img style="height:250px"  src="static/img/vicroads.png" class="img-responsive" alt="">
+                                    <div style="padding-top:15px">
+                    <h4><a href="http://maxrozen.com/analytics/" target="_blank">D3 VicRoads Analytics Exercise</a></h4>
+                    
+                </div>
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                
+                    <img style="height:250px" src="static/img/wapt.png" class="img-responsive" alt="">
+                
+                <div style="padding-top:15px">
+                    <h4><a href="http://rozenmd.wordpress.com" target="_blank">Web Application Performance Testing</a></h4>
+                    
+                </div>
+            </div>
+           <div class="col-md-4 col-sm-6 portfolio-item">
+                
+                    <img style="height:250px" src="static/img/cigoy.png" class="img-responsive" alt="">
+                
+                <div style="padding-top:15px">
+                    <h4><a href="http://canigooutsideyet.maxrozen.com" target="_blank">Can I go outside yet?</a></h4>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
 {% endblocktrans %}
 {% endblock %}
