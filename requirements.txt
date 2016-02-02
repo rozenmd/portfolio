@@ -6,7 +6,6 @@ django-appconf==1.0.1
 django-compressor==2.0
 django-contrib-comments==1.6.2
 filebrowser-safe==0.4.1
-future==0.15.2
 grappelli-safe==0.4.2
 html5lib==0.9999999
 Mezzanine==4.1.0
